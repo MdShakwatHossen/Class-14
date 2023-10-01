@@ -1,0 +1,475 @@
+/* =========== Common Css Start =========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.button {
+  background-color: #cfc91d;
+  padding: 19px 42px;
+  color: #0b1016;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color: #02918c;
+  color: #ffffff;
+  border-radius: 15px;
+}
+.section_title h2 {
+  color: #02918c;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 800;
+}
+.section_title .devider {
+  margin: 32px 0;
+}
+.section_title p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e8287;
+  line-height: 41px;
+}
+
+.cards h5 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 29px 0;
+  color: #7e8287;
+}
+.cards p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #7e8287;
+}
+/* =========== Common Css End =========== */
+
+/* ==========Primary Navigation Css Starts========== */
+#primary_nav {
+  background-color: #02918c;
+}
+
+#primary_nav #menu a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 13.5px 25px;
+  display: block;
+  transition: 0.5s;
+}
+#primary_nav #menu a:hover {
+  color: #02918c;
+  background: #cfc91d;
+  border-radius: 15px;
+}
+/* ==========Primary Navigation Css Ends========== */
+
+/* ==========Banner Css Starts========== */
+#banner_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner1.jpg);
+  height: 728px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner_1 h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#banner_1 h1 {
+  font-size: 68px;
+  font-weight: 800;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+#banner_1 p {
+  font-size: 18px;
+  font-weight: 400;
+}
+#banner_1 img {
+  margin: 52px 0;
+}
+/* ==========Banner Css Ends========== */
+
+/* ==========About Css Starts========== */
+#about {
+  margin: 98px 0;
+}
+#about span {
+  font-size: 23px;
+  font-weight: 800;
+}
+#about .cards {
+  border-right: 1px solid #d9dbdb;
+  padding: 40px 70px;
+  margin-top: 80px;
+}
+#about .cards:last-child {
+  border: none;
+}
+/* ==========About Css Ends========== */
+
+/* ==========Services Css Starts========== */
+#services {
+  background-image: url(../img/banner2.jpg);
+  padding: 80px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#services .cards {
+  padding: 55px 55px 0 10px;
+}
+
+/* ==========Services Css Ends========== */
+
+/* ==========My Work Css Starts========== */
+#my-work .section_title {
+  margin: 85px 0;
+}
+#my-work .my-work-img .overlay {
+  position: absolute;
+  background-color: rgba(2, 145, 140, 85%);
+  padding: 55px 32px;
+  inset: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: 0.5s;
+  opacity: 0;
+}
+#my-work .my-work-img:hover .overlay {
+  transform: scale(1);
+  opacity: 1;
+  border-radius: 0px;
+}
+#my-work .my-work-img .overlay h4 {
+  margin-bottom: 15px;
+}
+#my-work .my-work-img .overlay p {
+  font-size: 16px;
+  line-height: 21px;
+}
+/* ==========My Work Css Ends========== */
+
+/* ==========Contact Me Css Starts========== */
+#contact-me .section_title {
+  margin: 90px;
+}
+#contact-me #contact-form {
+  background-color: #0b0b0b;
+}
+#contact-me #contact-form input {
+  margin-bottom: 35px;
+  padding: 40px 0 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #7e8287;
+  outline: none;
+  color: #7e8287;
+}
+#contact-me #contact-form input:focus {
+  border-color: #02918c;
+}
+#contact-me .button {
+  margin: 65px 0;
+  border: 0;
+}
+/* ==========Contact Me Css Ends========== */
+
+/* ==========Footer Css Starts========== */
+footer {
+  background-color: #000000;
+  padding: 35px 0;
+  color: #7e8287;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* ==========Footer Css Ends========== */
+
+/* ==========Responsive Css Starts========== */
+
+/*Extra Small Device Css Starts */
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+  #banner_1 {
+    width: 100%;
+    height: 180px;
+  }
+  #banner_1 h3 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #banner_1 h1 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+  }
+  #banner_1 p {
+    font-size: 9px;
+    font-weight: 400;
+  }
+  #banner_1 img {
+    margin: 10px 0;
+    width: 50px;
+  }
+  .button {
+    font-size: 8px;
+    padding: 10px;
+  }
+  .section_title h2 {
+    color: #02918c;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .section_title .devider {
+    margin: 15px 0;
+  }
+  #about .section_title span {
+    font-size: 15px;
+  }
+  .section_title {
+    padding: 0;
+    margin: 10px 0;
+  }
+  .section_title p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 35px;
+  }
+  #about .cards {
+    border: none;
+    padding: 10px 30px;
+  }
+  #services {
+    padding: 20px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #services .cards {
+    padding: 20px 0px 0 10px;
+  }
+  #my-work .my-work-img .overlay {
+    padding: 8px;
+    inset: 10px 20px;
+  }
+  #my-work .my-work-img .overlay h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #my-work .my-work-img .overlay p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  #contact-me #contact-form input {
+    margin-bottom: 0;
+    padding: 20px 0 10px;
+  }
+  #contact-me .button {
+    margin: 20px 0;
+  }
+  footer {
+    padding: 20px 0;
+  }
+}
+/*Extra Small Device Css Ends*/
+
+/*Small Device Css Starts */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+  #banner_1 {
+    width: 100%;
+    height: 350px;
+  }
+  #banner_1 h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #banner_1 h1 {
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+  }
+  #banner_1 p {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  #banner_1 img {
+    margin: 25px 0;
+    width: 80px;
+  }
+  .button {
+    font-size: 11px;
+    padding: 12px;
+  }
+  #about .cards {
+    border-right: 1px solid #d9dbdb;
+    padding: 20px;
+    margin: 40px 0;
+  }
+  #about .cards:nth-child(even) {
+    border: none;
+  }
+  #my-work .my-work-img .overlay {
+    padding: 8px;
+    inset: 10px 20px;
+  }
+  #my-work .my-work-img .overlay h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  #my-work .my-work-img .overlay p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #contact-me #contact-form input {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 25px 0;
+  }
+  #contact-me .button {
+    margin: 25px 0;
+  }
+  footer {
+    padding: 25px 0;
+  }
+}
+/*Small Device Css Ends*/
+
+/*Medium Device Css Starts */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+  #banner_1 {
+    width: 100%;
+    height: 450px;
+  }
+  #banner_1 h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #banner_1 h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+  }
+  #banner_1 p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #banner_1 img {
+    margin: 40px 0;
+    width: 90px;
+  }
+  .button {
+    font-size: 13px;
+    padding: 15px;
+  }
+  #about .cards {
+    border-right: 1px solid #d9dbdb;
+    margin: 15px 0;
+  }
+  #about .cards:nth-child(even) {
+    border: none;
+  }
+  #my-work .my-work-img .overlay {
+    padding: 8px;
+    inset: 10px 20px;
+  }
+  #my-work .my-work-img .overlay h4 {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+  #my-work .my-work-img .overlay p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #contact-me #contact-form input {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  #contact-me .button {
+    margin: 35px 0;
+  }
+
+}
+/*Medium Device Css Ends*/
+
+/*Large Device Css Starts */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+  #banner_1 {
+    width: 100%;
+    height: 550px;
+  }
+  #banner_1 h3 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  #banner_1 h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 28px;
+    text-transform: uppercase;
+  }
+  #banner_1 p {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  #banner_1 img {
+    margin: 50px 0;
+  }
+  #about .cards{
+    padding: 25px;
+  }
+  #my-work .my-work-img .overlay {
+    padding: 20px;
+    inset: 10px 20px;
+  }
+  #my-work .my-work-img .overlay h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  #my-work .my-work-img .overlay p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+
+/*Large Device Css Ends*/
+
+/* ==========Responsive Css Ends========== */
